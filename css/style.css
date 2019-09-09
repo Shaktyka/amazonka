@@ -4,8 +4,8 @@ body {
   padding: 0;
   background-color: white;
   font-family: 'Roboto', Arial, sans-serif;
-  font-size: 16px;
-  /*line-height: 1.25;*/
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 400;
   color: #000000;
 }
@@ -26,6 +26,16 @@ h1,
 h2,
 h3 {
   margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 35px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 ul {
@@ -69,16 +79,49 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.btn {
+  background-color: #FF6C6C;
+  min-height: 60px;
+
+  font-size: 18px;
+  line-height: 160%;
+  color: #ffffff;
+
+  border-radius: 4px;
+}
+
 /* Хедер */
+
+.header {
+  background-color: #E5E5E5;
+}
 
 .header .container {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* Лого */
+
+.logo {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+/* Навигация */
+
 .site-nav {
   display: flex;
   flex-wrap: wrap;
+}
+
+.site-nav a {
+  font: inherit;
+}
+
+.phone {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 /* Промо-блок */
@@ -86,6 +129,26 @@ input[type="radio"].visually-hidden {
 .promo {
   display: flex;
   flex-wrap: wrap;
+}
+
+.promo__title {
+  font-size: 58px;
+  line-height: 100%;
+}
+
+.promo__desc {
+  font-size: 17px;
+  line-height: 160%;
+}
+
+.promo__btn {
+  width: 250px;
+}
+
+.promo__img-wrap {
+  display: flex;
+  width: 632px;
+  height: 436px;
 }
 
 /* Каталог товаров */
@@ -100,10 +163,26 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+
+  width: 358px;
+  min-height: 532px;
+
+  background-color: #F8F8F8;
+  box-shadow: 0px 4px 4px rgba(104, 104, 104, 0.1);
+  border-radius: 5px;
 }
 
 .product__info {
   display: flex;
+}
+
+.product__price {
+  font-size: 36px;
+  line-height: 53px;
+}
+
+.product__btn {
+  width: 300px;
 }
 
 /* Отзывы */
@@ -118,9 +197,34 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+
+  width: 261px;
+  min-height: 250px;
+
+  background: #FFFFFF;
+  border: 1px solid #EDEDED;
+  box-shadow: 0px 4px 4px rgba(131, 131, 131, 0.25);
+  border-radius: 10px;
+}
+
+.review__img {
+  border-radius: 5px;
+}
+
+.review__author {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.review__text {
+  font: inherit;
 }
 
 /* Контакты */
+
+.contacts {
+  background-color: #E5E5E5;
+}
 
 .contacts .container {
   display: flex;
@@ -130,4 +234,9 @@ input[type="radio"].visually-hidden {
 .socials__list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.contacts__map .img-wrap {
+  width: 549px;
+  height: 359px;
 }
