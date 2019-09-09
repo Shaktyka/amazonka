@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Amazonka</title>
-	<link rel="stylesheet" href="./css/normalize.css">
-	<link rel="stylesheet" href="./css/style.css">
+  <title>Amazonka</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-	<header class="header">
+  <header class="header">
     <div class="container">
       <a class="logo" href="index.html">Амазонка</a>
       <nav>
@@ -45,7 +47,6 @@
       </section>
     </div>
   </header>
-
   <main class="main">
     <div class="container">
       <!-- Каталог -->
@@ -132,7 +133,6 @@
           </li>
         </ul>
       </section>
-
       <!-- Отзывы -->
       <section class="reviews">
         <div class="container">
@@ -189,12 +189,78 @@
           </ul>
         </div>
       </section>
-
+      <!-- Контакты -->
+      <section class="contacts">
+        <div class="container">
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__form-wrap">
+            <form class="form contacts__form" action="#" name="contacts">
+              <p class="form__group">
+                <label for="user-email">Ваше имя:</label>
+                <input class="text__field" name="user-name" id="user-name" type="text" placeholder="Ваше имя">
+              </p>
+              <p class="form__group">
+                <label for="user-email">Ваш email:</label>
+                <input class="text__field" name="user-email" id="user-email" type="text" placeholder="Ваш email">
+              </p>
+              <p class="form__group">
+                <label for="user-comment">Комментарий:</label>
+                <textarea class="text__field" name="user-comment" id="user-comment" placeholder="Комментарий"></textarea>
+              </p>
+              <button class="form__submit" type="submit">Отправить заявку</button>
+              <div class="socials">
+                <ul class="socials__list">
+                  <li class="socials__item">
+                    <a href="#">
+                      1
+                      <!-- icon -->
+                      <span class="v-hidden"></span>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#">
+                      2
+                      <!-- icon -->
+                      <span class="v-hidden"></span>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#">
+                      3
+                      <!-- icon -->
+                      <span class="v-hidden"></span>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#">
+                      4
+                      <!-- icon -->
+                      <span class="v-hidden"></span>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#">
+                      5
+                      <!-- icon -->
+                      <span class="v-hidden"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </form>
+          </div>
+          <div class="contacts__map">
+            <div class="img-wrap">
+              <img class="contacts__map" width="" height="" src="img/" alt="Статическая карта">
+            </div>
+            <!-- Интерактивная карта -->
+          </div>
+        </div>
+      </section>
     </div>
   </main>
-
   <footer class="footer">
-
   </footer>
 </body>
+
 </html>
