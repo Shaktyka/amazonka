@@ -1,21 +1,69 @@
+/* Шрифты */
+
+@font-face {
+  font-family: 'Circle';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src:
+    local('Circle'),
+    url('../fonts/Circe-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Circle';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local('Circle'),
+    url('../fonts/Circe-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Circle';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local('Circle'),
+    url('../fonts/Circe-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Circle';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src:
+    local('Circle'),
+    url('../fonts/Circe-ExtraBold.woff') format('woff');
+}
+
+/* Основные */
+
+* {
+  outline: 1px solid gray;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   background-color: white;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Circle', Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #000000;
 }
 
-/*container {
-  max-width: 1492px;
+.container {
+  max-width: 1134px;
   margin: 0 auto;
-}*/
+}
 
-/* COMMON */
+/* Общие */
 
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
@@ -80,6 +128,10 @@ input[type="radio"].visually-hidden {
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: #FF6C6C;
   min-height: 60px;
 
@@ -93,12 +145,19 @@ input[type="radio"].visually-hidden {
 /* Хедер */
 
 .header {
+  margin-bottom: 100px;
+  padding-top: 63px;
+  padding-bottom: 142px;
   background-color: #E5E5E5;
 }
 
-.header .container {
+.header__top {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
+
+  margin-bottom: 140px;
 }
 
 /* Лого */
@@ -106,6 +165,7 @@ input[type="radio"].visually-hidden {
 .logo {
   font-size: 18px;
   line-height: 27px;
+  font-weight: 900;
 }
 
 /* Навигация */
@@ -115,6 +175,10 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
 }
 
+.site-nav li:not(:last-child) {
+  margin-right: 20px;
+}
+
 .site-nav a {
   font: inherit;
 }
@@ -122,6 +186,7 @@ input[type="radio"].visually-hidden {
 .phone {
   font-size: 16px;
   line-height: 24px;
+  font-weight: 900;
 }
 
 /* Промо-блок */
@@ -129,16 +194,24 @@ input[type="radio"].visually-hidden {
 .promo {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.promo__text {
+  width: 455px;
+  margin-right: 35px;
 }
 
 .promo__title {
   font-size: 58px;
   line-height: 100%;
+  margin-bottom: 23px;
 }
 
 .promo__desc {
   font-size: 17px;
   line-height: 160%;
+  margin-bottom: 42px;
 }
 
 .promo__btn {
