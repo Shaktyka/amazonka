@@ -31,7 +31,7 @@
             </li>
           </ul>
         </nav>
-        <a class="phone" href="tel:88002503020">8 800 250 30 20</a>
+        <a class="phone" href="tel:+78002503020">8 800 250 30 20</a>
       </div>
       <!-- Промо-блок -->
       <section class="promo">
@@ -39,7 +39,7 @@
         <div class="promo__text">
           <h1 class="promo__title">Лучшие костыли для вашего кода</h1>
           <p class="promo__desc">
-            Не придумывайте велосипед, мы за вас сделали костыли — используйте их, это почти бесплатно
+            Не придумывайте велосипед, мы за вас сделали костыли — используйте их, это почти бесплатно.
           </p>
           <a class="btn promo__btn" href="#">Выбрать костыль</a>
         </div>
@@ -191,24 +191,30 @@
           </ul>
         </div>
       </section>
-      <!-- Контакты -->
+
+    </div>
+  </main>
+  <footer class="footer">
+    <!-- Контакты -->
       <section class="contacts">
         <div class="container">
           <h2 class="contacts__title">Контакты</h2>
           <div class="contacts__content">
             <div class="contacts__form-wrap">
               <form class="form contacts__form" action="#" name="contacts">
+                <div class="form__inputs-wrap">
+                  <p class="form__group">
+                    <label class="v-hidden" for="user-email">Ваше имя:</label>
+                    <input class="text__field" name="user-name" id="user-name" type="text" placeholder="Ваше имя">
+                  </p>
+                  <p class="form__group">
+                    <label class="v-hidden" for="user-email">Ваш email:</label>
+                    <input class="text__field" name="user-email" id="user-email" type="text" placeholder="Ваш email">
+                  </p>
+                </div>
                 <p class="form__group">
-                  <label for="user-email">Ваше имя:</label>
-                  <input class="text__field" name="user-name" id="user-name" type="text" placeholder="Ваше имя">
-                </p>
-                <p class="form__group">
-                  <label for="user-email">Ваш email:</label>
-                  <input class="text__field" name="user-email" id="user-email" type="text" placeholder="Ваш email">
-                </p>
-                <p class="form__group">
-                  <label for="user-comment">Комментарий:</label>
-                  <textarea class="text__field" name="user-comment" id="user-comment" placeholder="Комментарий"></textarea>
+                  <label class="v-hidden" for="user-comment">Комментарий:</label>
+                  <textarea class="text__field text__field--textarea" name="user-comment" id="user-comment" placeholder="Комментарий"></textarea>
                 </p>
                 <div class="form__wrap">
                   <button class="btn btn-submit" type="submit">Отправить заявку</button>
@@ -217,31 +223,31 @@
                       <li class="social__item">
                         <a href="#">
                           <img src="img/icon-1.png" alt="">
-                          <span class="v-hidden"></span>
+                          <span class="v-hidden">Dribble</span>
                         </a>
                       </li>
                       <li class="social__item">
                         <a href="#">
                           <img src="img/icon-2.png" alt="">
-                          <span class="v-hidden"></span>
+                          <span class="v-hidden">Instagram</span>
                         </a>
                       </li>
                       <li class="social__item">
                         <a href="#">
                           <img src="img/icon-3.png" alt="">
-                          <span class="v-hidden"></span>
+                          <span class="v-hidden">Telegram</span>
                         </a>
                       </li>
                       <li class="social__item">
                         <a href="#">
                           <img src="img/icon-4.png" alt="">
-                          <span class="v-hidden"></span>
+                          <span class="v-hidden">Twitter</span>
                         </a>
                       </li>
                       <li class="social__item">
                         <a href="#">
                           <img src="img/icon-5.png" alt="">
-                          <span class="v-hidden"></span>
+                          <span class="v-hidden">Youtube</span>
                         </a>
                       </li>
                     </ul>
@@ -258,9 +264,6 @@
           </div>
         </div>
       </section>
-    </div>
-  </main>
-  <footer class="footer">
   </footer>
 </body>
 

@@ -42,10 +42,6 @@
 
 /* Основные */
 
-* {
-  outline: 1px solid gray;
-}
-
 html,
 body {
   margin: 0;
@@ -139,8 +135,12 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 160%;
   color: #ffffff;
+  font-weight: 700;
 
+  border: none;
   border-radius: 4px;
+
+  cursor: pointer;
 }
 
 /* Хедер */
@@ -149,7 +149,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 100px;
   padding-top: 63px;
   padding-bottom: 142px;
-  background-color: #E5E5E5;
+  background-color: #F8F8F8;
 }
 
 .header__top {
@@ -334,10 +334,13 @@ input[type="radio"].visually-hidden {
 
 /* Контакты */
 
+.footer {
+  background-color: #F8F8F8;
+}
+
 .contacts {
   padding-top: 100px;
   padding-bottom: 99px;
-  background-color: #E5E5E5;
 }
 
 .contacts .contacts__content {
@@ -354,6 +357,47 @@ input[type="radio"].visually-hidden {
   width: 550px;
 }
 
+.form__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__inputs-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.text__field {
+  width: 260px;
+  padding: 25px 30px 24px 31px;
+
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  line-height: 21px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(217, 217, 217, 0.25);
+
+  border: none;
+  border-radius: 5px;
+}
+
+.text__field--textarea {
+  width: 552px;
+  height: 170px;
+
+  margin-bottom: 30px;
+  resize: vertical;
+}
+
+.btn-submit {
+  width: 260px;
+}
+
 .social__list {
   width: 260px;
 
@@ -361,16 +405,16 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.social__list a {
+  display: flex;
 }
 
 .contacts__map .img-wrap {
   width: 549px;
   height: 359px;
-}
-
-.form__wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
 }
