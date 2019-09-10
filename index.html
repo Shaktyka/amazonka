@@ -13,25 +13,25 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header__top">
+      <div class="header__menu">
         <a class="logo" href="index.html">Амазонка</a>
-        <nav>
+        <nav id="menu">
           <ul class="site-nav">
             <li>
-              <a href="#">Каталог товаров</a>
+              <a href="#catalog">Каталог товаров</a>
             </li>
-            <li>
+            <!-- <li>
               <a href="#">Категории</a>
+            </li> -->
+            <li>
+              <a href="#reviews">Отзывы</a>
             </li>
             <li>
-              <a href="#">Отзывы</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
+              <a href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
-        <a class="phone" href="tel:+78002503020">8 800 250 30 20</a>
+        <a class="phone" href="tel:+78002503020" title="Позвоните нам">8 800 250 30 20</a>
       </div>
       <!-- Промо-блок -->
       <section class="promo">
@@ -44,7 +44,7 @@
           <a class="btn promo__btn" href="#">Выбрать костыль</a>
         </div>
         <div class="promo__img-wrap">
-          <img src="img/promo-image.png" width="" height="" alt="Изображение костылей">
+          <img src="img/promo-image.png" width="632" height="436" alt="Изображение костылей">
         </div>
       </section>
     </div>
@@ -52,7 +52,7 @@
   <main class="main">
     <div class="container">
       <!-- Каталог -->
-      <section class="catalog">
+      <section class="catalog" id="catalog">
         <h2 class="catalog__title">Каталог товаров</h2>
         <ul class="catalog__list">
           <!-- 1 -->
@@ -136,7 +136,7 @@
         </ul>
       </section>
       <!-- Отзывы -->
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="container">
           <h2 class="reviews__header">Отзывы клиентов</h2>
           <ul class="reviews__list">
@@ -191,12 +191,11 @@
           </ul>
         </div>
       </section>
-
     </div>
   </main>
   <footer class="footer">
     <!-- Контакты -->
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container">
           <h2 class="contacts__title">Контакты</h2>
           <div class="contacts__content">
@@ -221,32 +220,32 @@
                   <div class="social">
                     <ul class="social__list">
                       <li class="social__item">
-                        <a href="#">
-                          <img src="img/icon-1.png" alt="">
+                        <a href="https://dribbble.com/">
+                          <img src="img/icon-1.png" width="21" height="21" alt="Логотип Dribble">
                           <span class="v-hidden">Dribble</span>
                         </a>
                       </li>
                       <li class="social__item">
-                        <a href="#">
-                          <img src="img/icon-2.png" alt="">
+                        <a href="https://www.instagram.com">
+                          <img src="img/icon-2.png" width="22" height="21" alt="Логотип Instagram">
                           <span class="v-hidden">Instagram</span>
                         </a>
                       </li>
                       <li class="social__item">
                         <a href="#">
-                          <img src="img/icon-3.png" alt="">
+                          <img src="img/icon-3.png" width="22" height="21" alt="Логотип Telegram">
                           <span class="v-hidden">Telegram</span>
                         </a>
                       </li>
                       <li class="social__item">
-                        <a href="#">
-                          <img src="img/icon-4.png" alt="">
+                        <a href="https://twitter.com/">
+                          <img src="img/icon-4.png" width="22" height="17" alt="Логотип Twitter">
                           <span class="v-hidden">Twitter</span>
                         </a>
                       </li>
                       <li class="social__item">
-                        <a href="#">
-                          <img src="img/icon-5.png" alt="">
+                        <a href="https://www.youtube.com/">
+                          <img src="img/icon-5.png" alt="Логтип Youtube">
                           <span class="v-hidden">Youtube</span>
                         </a>
                       </li>
@@ -265,10 +264,19 @@
         </div>
       </section>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
   <script>
     window.onload = function() {
       document.body.innerHTML = document.body.innerHTML.replace(/\u2028/g, '');
     };
+    $(document).ready(function(){
+      $(`#menu`).on(`click`, `a`, function (evt) {
+        evt.preventDefault();
+        const id  = $(this).attr(`href`);
+        const top = $(id).offset().top;
+        $(`body, html`).animate({scrollTop: top}, 1200);
+      });
+    });
 </script>
 </body>
 

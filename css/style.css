@@ -143,6 +143,11 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
+.btn:hover,
+.btn:focus {
+  background-color: #fb5f5f;
+}
+
 /* Хедер */
 
 .header {
@@ -152,7 +157,7 @@ input[type="radio"].visually-hidden {
   background-color: #F8F8F8;
 }
 
-.header__top {
+.header__menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
